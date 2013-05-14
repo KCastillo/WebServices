@@ -1,0 +1,23 @@
+body{
+	font-size: 1em;
+	line-height: 1.4;
+	font-family: 'Muli', arial, serif;
+}
+
+h2{
+ color: #00AEEF;
+}
+.box{
+	display: inline;
+	border: 2px #00AEEF solid;
+	margin: 10px 5px;
+	padding: 10px;
+	background-color: #F8F8F8;
+}
+a.box {
+	text-decoration: none;
+	color: #00AEEF;
+}
+div#signIn {
+	margin: 40px 20px;	
+}

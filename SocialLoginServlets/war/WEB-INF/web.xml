@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>SocialLoginServlet</servlet-name>
+		<servlet-class>com.casey.gae.sociallogin.SocialLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SocialLoginServlet</servlet-name>
+		<url-pattern>/auth/Facebook</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CallBackServlet</servlet-name>
+		<servlet-class>com.casey.gae.sociallogin.CallBackServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CallBackServlet</servlet-name>
+		<url-pattern>/CallBackServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LinkedInServlet</servlet-name>
+		<servlet-class>com.casey.gae.sociallogin.linkedin.LinkedInServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CallBackServlet2</servlet-name>
+		<url-pattern>/CallBackServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CallBackServlet2</servlet-name>
+		<servlet-class>com.casey.gae.sociallogin.linkedin.CallBackServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LinkedInServlet</servlet-name>
+		<url-pattern>/auth/LinkedIn</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
